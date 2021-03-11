@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layouts/favicon.png" type="image/x-icon">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Fancy Box-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Link Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Material Design  Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <!-- Swiper JS-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Venobox-->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aavi</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Start Loader-->
+      <div class="loader"> 
+        <svg class="loader__effect" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+          <defs>
+            <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></fecolormatrix>
+            </filter>
+          </defs>
+          <g filter="url(#goo)">
+            <circle class="dot" cx="50" cy="25" r="25" fill="#0033CC"></circle>
+            <circle class="dot" cx="50" cy="25" r="25" fill="#673AB7"></circle>
+          </g>
+        </svg>
+      </div>
+      <!-- End Loader-->
+      <!-- Start Header-->
+      <div class="header">
+        <div class="header__overlay"></div>
+        <div class="container">
+          <div class="header__menu">
+            <div class="header__menu-logo"><a class="logo__link" href="index.html"><img class="logo__link-white" src="images/layouts/logo-white.svg" alt="logo"><img class="logo__link-blue" src="images/layouts/logo-blue.svg" alt="logo"></a></div>
+            <div class="header__menu-button">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <ul class="header__menu-list">
+              <li class="list__item">
+                <div class="list__item-title">Menu</div>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#slider">Home</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#about">About</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#features">Features</a></li>
+              <li class="list__item"><a class="list__item-link">Pages
+                  <div class="link__icon"><i class="fas fa-chevron-down"></i></div></a>
+                <ul class="submenu">
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Inner Pages<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="pricing.html">Pricing</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="newsletter.html">Newsletter</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="faq.html">FAQ's Page</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="contact.html">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Blogs<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog.html">Blog</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog-details.html">Blogs Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Accounts<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signin.html">Login</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signup.html">Sign Up</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="forgot.html">Forgot Password</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="coming-soon.html">Coming Soon</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="404.html">404</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="thank-you.html">Thank You</a></li>
+                </ul>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#pricing">Pricing</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#contact">Contact</a></li>
+              <li class="list__item"><a class="list__item-link" href="signin.html"><i class="mdi mdi-login"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Header-->
+      <!-- Start Slider-->
+      <div class="slider section" id="slider">
+        <div class="container">
+          <div class="owl-slider owl-carousel owl-theme">
+            <div class="slider__item">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-7">
+                  <div class="slider__item-content">
+                    <h3>Welcome To</h3>
+                    <h1>Creative way to Showcase your App</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="content__button"><a href="#"><img class="img-fluid" src="images/home/app-store.svg" alt="app-store"></a><a href="#"><img class="img-fluid" src="images/home/google-play.svg" alt="google-play"></a></div><span>* Available on iPhone, iPad and all Android devices</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <div class="slider__item-image mx-auto"><img class="img-fluid img-shadow shake-item" src="images/home/slider-1.png" alt="slider"></div>
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-7">
+                  <div class="slider__item-content">
+                    <h3>Welcome To</h3>
+                    <h1>Best mobile app landing page of 2021</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <div class="content__button"><a href="#"><img class="img-fluid" src="images/home/app-store.svg" alt="app-store"></a><a href="#"><img class="img-fluid" src="images/home/google-play.svg" alt="google-play"></a></div><span>* Available on iPhone, iPad and all Android devices</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-5">
+                  <div class="slider__item-image mx-auto"><img class="img-fluid img-shadow shake-item" src="images/home/slider-2.png" alt="slider"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__shape">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1937.32" height="312.183" viewbox="0 0 1937.32 312.183">
+            <g id="header-wave-bg" transform="translate(3 3)">
+              <g id="sApp-v1.0" transform="translate(0 -554)">
+                <path id="sApp-v1.0-2" data-name="sApp-v1.0" d="M-3,551S63.119,757.91,223.3,811.65s338.223-15.321,414.43-45.688,179.249-84.051,397.988-32.9S1271.277,629.426,1451,576.571s450.76,125.366,483.32,94.471V863.183H-3" fill="#fff" fill-rule="evenodd"></path>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <!-- End Slider-->
+      <!-- Start Different-->
+      <div class="different section" id="different">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 text-center mx-auto">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Welcome</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>What Makes </span>
+                        <div class="text-color">Aavi</div><span> Different?</span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="different__card shadow card animate__animated animate__zoomIn wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <div class="card-body text-center">
+                        <div class="icon"><i class="mdi mdi-responsive"></i></div>
+                        <h3>Fully Responsive</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p><a class="btn btn-shadow btn-yellow" href="#">Read More <i class="far fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="different__card shadow card animate__animated animate__zoomIn wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <div class="card-body text-center">
+                        <div class="icon"><i class="mdi mdi-image-filter-black-white"></i></div>
+                        <h3>Easy to Customize</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p><a class="btn btn-shadow btn-yellow" href="#">Read More <i class="far fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="different__card shadow card animate__animated animate__zoomIn wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <div class="card-body text-center">
+                        <div class="icon"><i class="mdi mdi-security"></i></div>
+                        <h3>Extravagant Security</h3>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p><a class="btn btn-shadow btn-yellow" href="#">Read More <i class="far fa-chevron-right"></i></a>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Different-->
+      <!-- Start About-->
+      <div class="about section section-wrapper" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">About Us</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>One step ahead to start with </span>
+                        <div class="text-color">Aavi</div><span>.</span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+              <ul class="about__list">
+                <li class="about__list-item animate__animated animate__fadeInRight wow" data-wow-delay="0.8s" data-wow-duration="1s">Template updates & bug fixes</li>
+                <li class="about__list-item animate__animated animate__fadeInRight wow" data-wow-delay="1s" data-wow-duration="1s">Use in your personal or commercial projects</li>
+                <li class="about__list-item animate__animated animate__fadeInRight wow" data-wow-delay="1.2s" data-wow-duration="1s">Use in unlimited websites or applications</li>
+                <li class="about__list-item animate__animated animate__fadeInRight wow" data-wow-delay="1.4s" data-wow-duration="1s">Premium support via Email</li>
+              </ul><a class="btn btn-lg btn-blue animate__animated animate__zoomIn wow" data-wow-delay="1.6s" data-wow-duration="1s" href="#">Get Started <i class="far fa-chevron-right"></i></a>
+            </div>
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+              <div class="art-background animate__animated animate__zoomIn wow" data-wow-delay="0s" data-wow-duration="0.5s"></div>
+              <div class="thumb mx-auto animate__animated animate__fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1s"><img class="img-fluid img-shadow shake-item" src="images/layouts/about-app.png" alt="about app"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About-->
+      <!-- Start Features-->
+      <div class="features section section-wrapper" id="features">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="art-background animate__animated animate__zoomIn wow" data-wow-delay="0s" data-wow-duration="0.5s"></div>
+              <div class="thumb mx-auto animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s" data-wow-duration="1s"><img class="img-fluid img-mw img-shadow shake-item" src="images/layouts/features-app.png" alt="features app"></div>
+            </div>
+            <div class="col-12 col-lg-6">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Features</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>The Unique Features Of </span>
+                        <div class="text-color">Aavi</div><span>.</span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+              <ul class="group__list">
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-face-agent"></i></div>
+                  <div class="item__content">
+                    <h4>24*7 Support Available</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="1s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-cellphone-arrow-down"></i></div>
+                  <div class="item__content">
+                    <h4>Free Updates</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-code-braces"></i></div>
+                  <div class="item__content">
+                    <h4>Clean Code</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Features-->
+      <!-- Start Install-->
+      <div class="install section section-wrapper" id="install">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
+              <div class="art-background animate__animated animate__zoomIn wow" data-wow-delay="0s" data-wow-duration="0.5s"></div>
+              <div class="thumb mx-auto animate__animated animate__fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1s"><img class="img-fluid img-mw img-shadow shake-item" src="images/layouts/install-app.png" alt="install app"></div>
+            </div>
+            <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Install</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Easy Customization and Fast </span>
+                        <div class="text-color">Installation</div><span>.</span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+              <ul class="group__list">
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-monitor-screenshot"></i></div>
+                  <div class="item__content">
+                    <h4>Retina Ready</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="1s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-monitor-cellphone"></i></div>
+                  <div class="item__content">
+                    <h4>Responsive Design</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+                <li class="group__list-item animate__animated animate__fadeInUp wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-ruler-square"></i></div>
+                  <div class="item__content">
+                    <h4>Unique Design</h4>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Install-->
+      <!-- Start Works-->
+      <div class="works section section-wrapper" id="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Video</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Watch Video </span>
+                        <div class="text-color">Tutorial</div><span> </span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+              <div class="works__video animate__animated animate__fadeInLeft wow" data-wow-delay="0.8s" data-wow-duration="1s"><img class="img-fluid" src="images/layouts/bg-video.svg" alt="video"><a class="works__video-button" href="https://www.youtube.com/watch?v=rLvmeh8mOBc&amp;list=PLZLjCxQxwJSbvh5K7uwD8ABCWMO8yhRwt&amp;index=91" data-fancybox="video"><i class="mdi mdi-play"></i></a></div>
+            </div>
+            <div class="col-12">
+              <div class="works__process">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="works__process-item animate__animated animate__fadeIn wow active" data-wow-delay="1s" data-wow-duration="1s">
+                      <div class="item__step"><a href="#z"><span class="icon"><i class="mdi mdi-cellphone-arrow-down"></i></span></a></div>
+                      <h5>Download</h5>
+                      <div class="item__text">
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="works__process-item animate__animated animate__fadeIn wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                      <div class="item__step"><a href="#z"><span class="icon"><i class="mdi mdi-progress-download"></i></span></a></div>
+                      <h5>Install</h5>
+                      <div class="item__text">
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="works__process-item animate__animated animate__fadeIn wow" data-wow-delay="1.4s" data-wow-duration="1s">
+                      <div class="item__step"><a href="#z"><span class="icon"><i class="mdi mdi-lifebuoy"></i></span></a></div>
+                      <h5>Manual</h5>
+                      <div class="item__text">
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="works__process-item animate__animated animate__fadeIn wow" data-wow-delay="1.6s" data-wow-duration="1s">
+                      <div class="item__step no-line"><a href="#z"><span class="icon"><i class="mdi mdi-cellphone-text"></i></span></a></div>
+                      <h5>Explore It</h5>
+                      <div class="item__text">
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Works-->
+      <!-- Start Screen Shots-->
+      <div class="screenShots section section-wrapper" id="screenShots">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Screenshots</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Simple &amp; Beautiful </span>
+                        <div class="text-color">Interface</div><span> </span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="screenShots__slide swiper-container animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="screenShots__slide-overlay"><img src="images/layouts/screenshot-01.png" alt="screenshot"><a class="overlay-icon vbox-item" href="images/layouts/screenshot-01.png" data-gall="myGallery"><i class="mdi mdi-image"></i></a></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="screenShots__slide-overlay"><img src="images/layouts/screenshot-02.png" alt="screenshot"><a class="overlay-icon vbox-item" href="images/layouts/screenshot-02.png" data-gall="myGallery"><i class="mdi mdi-image"></i></a></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="screenShots__slide-overlay"><img src="images/layouts/screenshot-03.png" alt="screenshot"><a class="overlay-icon vbox-item" href="images/layouts/screenshot-03.png" data-gall="myGallery"><i class="mdi mdi-image"></i></a></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="screenShots__slide-overlay"><img src="images/layouts/screenshot-04.png" alt="screenshot"><a class="overlay-icon vbox-item" href="images/layouts/screenshot-04.png" data-gall="myGallery"><i class="mdi mdi-image"></i></a></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="screenShots__slide-overlay"><img src="images/layouts/screenshot-05.png" alt="screenshot"><a class="overlay-icon vbox-item" href="images/layouts/screenshot-05.png" data-gall="myGallery"><i class="mdi mdi-image"></i></a></div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Screen Shots-->
+      <!-- Start Pricing-->
+            <div class="pricing section section-wrapper" id="pricing">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+                          <div class="title">
+                            <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Pricing</h3>
+                            <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>The right price plans </span>
+                              <div class="text-color">&quot;for you&quot;</div><span> </span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                          </div>
+                  </div>
+                </div>
+                <div class="pricing__pills animate__animated animate__fadeIn wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                  <ul class="nav nav-pills" id="myTab">
+                    <li class="nav-item"><a class="nav-link active" id="monthly-tab" href="#monthly" data-toggle="tab">Monthly</a></li>
+                    <li class="nav-item"><a class="nav-link" id="annualy-tab" href="#annualy" data-toggle="tab">Annualy</a></li>
+                  </ul>
+                </div>
+                <div class="tab-content animate__animated animate__fadeIn wow" id="myTabContent" data-wow-delay="1s" data-wow-duration="1s">
+                  <div class="tab-pane fade show active" id="monthly">
+                    <div class="owl-pricing owl-carousel owl-theme">
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Basic</h4>
+                            <h2>$35.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-shield-account"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="not-available">4 Email Address</li>
+                            <li class="not-available">Private Support</li>
+                            <li class="not-available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i> Star with Basic</a></div>
+                      </div>
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Professional</h4>
+                            <h2>$59.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-shield-sun"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="available">4 Email Address</li>
+                            <li class="available">Private Support</li>
+                            <li class="not-available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i>  Star with Pro </a></div>
+                      </div>
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Ultimate</h4>
+                            <h2>$99.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-package-variant-closed"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="available">4 Email Address</li>
+                            <li class="available">Private Support</li>
+                            <li class="available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i> Star with Ultimate</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="annualy">
+                    <div class="owl-pricing owl-carousel owl-theme">
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Basic</h4>
+                            <h2>$300.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-shield-account"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="not-available">4 Email Address</li>
+                            <li class="not-available">Private Support</li>
+                            <li class="not-available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i> Star with Basic</a></div>
+                      </div>
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Professional</h4>
+                            <h2>$599.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-shield-sun"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="available">4 Email Address</li>
+                            <li class="available">Private Support</li>
+                            <li class="not-available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i>  Star with Pro </a></div>
+                      </div>
+                      <div class="card pricing__card shadow">
+                        <div class="card-header">
+                          <div class="content">
+                            <h4>Ultimate</h4>
+                            <h2>$999.99 <small>/m</small></h2>
+                          </div>
+                          <div class="icon"><i class="mdi mdi-package-variant-closed"></i></div>
+                        </div>
+                        <div class="card-body">
+                          <ul>
+                            <li class="available">1GB Bandwidth</li>
+                            <li class="available">10 GB Diskspace</li>
+                            <li class="available">5 Domain Names</li>
+                            <li class="available">4 Email Address</li>
+                            <li class="available">Private Support</li>
+                            <li class="available">Live app deployments</li>
+                          </ul>
+                        </div>
+                        <div class="card-footer"><a class="btn btn-blue btn-lg" href="#"><i class="mdi mdi-shield-star"></i> Star with Ultimate</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing__button animate__animated animate__fadeIn wow" data-wow-delay="1s" data-wow-duration="1s"><a class="btn btn-blue btn-lg" href="#">Request for custom</a></div>
+              </div>
+            </div>
+      <!-- End Pricing-->
+      <!-- Start Clients-->
+      <div class="clients section section-wrapper" id="clients">
+        <div class="clients__background"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Our Clients</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Used by some of the best </span>
+                        <div class="text-color">Clients</div><span> </span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                    </div>
+            </div>
+          </div>
+          <div class="owl-clients owl-carousel owl-theme">
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-01.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Junaid Hasan</h4>
+                          <p>CEO, Themeland</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-02.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Edward Addison</h4>
+                          <p>Graphic Designer</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-03.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Jassica William</h4>
+                          <p>Graphic Designer</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-04.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Junaid Hasan</h4>
+                          <p>CEO, Themeland</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-05.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Jassica William</h4>
+                          <p>Graphic Designer</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card clients__card animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="card-body">
+                      <h3>Nice work! Keep it up</h3>
+                      <p>There are many variations of passages of Lorem Ipsum available, but the majority.</p>
+                      <div class="user">
+                        <div class="user-img"><img src="images/layouts/user-06.jpg" alt="user"></div>
+                        <div class="user-info">
+                          <h4>Jassica William</h4>
+                          <p>Graphic Designer</p>
+                          <div class="star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+          <div class="clients__count">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="clients__count-item animate__animated animate__fadeIn wow" data-wow-delay="1s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-account-group"></i></div>
+                  <h2><span class="counters" data-target="365">0</span>K</h2>
+                  <p>People Connect</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="clients__count-item animate__animated animate__fadeIn wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-download"></i></div>
+                  <h2><span class="counters" data-target="254">0</span>K</h2>
+                  <p>Total Download</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="clients__count-item animate__animated animate__fadeIn wow" data-wow-delay="1.4s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-account-check"></i></div>
+                  <h2><span class="counters" data-target="985">0</span>K</h2>
+                  <p>Our Customer</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="clients__count-item animate__animated animate__fadeIn wow" data-wow-delay="1.6s" data-wow-duration="1s">
+                  <div class="item__icon"><i class="mdi mdi-developer-board"></i></div>
+                  <h2><span class="counters" data-target="15">0</span>K</h2>
+                  <p>Developer Involved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Clients-->
+      <!-- Start Team-->
+      <div class="team section section-wrapper" id="team">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Team</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Our team is your </span>
+                        <div class="text-color">Team</div><span> </span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">When your mission is to be better, faster and smarter, you need the best people driving your vision forward. You need people who can create focused marketing strategies that align with business goals </p>
+                    </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card team__card shadow animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                <div class="team__card-image"><img src="images/layouts/user-01.jpg" alt="team"></div>
+                <div class="card-body">
+                  <div class="info">
+                    <h4>Edward William</h4>
+                    <p>UI Developer</p>
+                  </div>
+                  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card team__card shadow animate__animated animate__fadeInUp wow" data-wow-delay="1s" data-wow-duration="1s">
+                <div class="team__card-image"><img src="images/layouts/user-07.jpg" alt="team"></div>
+                <div class="card-body">
+                  <div class="info">
+                    <h4>Esther Blankenship</h4>
+                    <p>UX Evangelist</p>
+                  </div>
+                  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card team__card shadow animate__animated animate__fadeInUp wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                <div class="team__card-image"><img src="images/layouts/user-08.jpg" alt="team"></div>
+                <div class="card-body">
+                  <div class="info">
+                    <h4>Luis Veccino S</h4>
+                    <p>FSolutions</p>
+                  </div>
+                  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="card team__card shadow animate__animated animate__fadeInUp wow" data-wow-delay="1.4s" data-wow-duration="1s">
+                <div class="team__card-image"><img src="images/layouts/user-02.jpg" alt="team"></div>
+                <div class="card-body">
+                  <div class="info">
+                    <h4>Edward William</h4>
+                    <p>UI Developer</p>
+                  </div>
+                  <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-dribbble"></i></a><a href="#"><i class="fab fa-behance"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Team-->
+      <!-- Start News-->
+      <div class="news section section-wrapper" id="news"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-12 col-md-10 col-lg-8 mx-auto text-center"> 
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">News</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Latest News </span>
+                        <div class="text-color">Headlines</div><span></span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">When your mission is to be better, faster and smarter, you need the best people driving your vision forward. You need people who can create focused marketing strategies that align with business goals </p>
+                    </div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-md-6 col-lg-4 mx-auto animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                    <div class="news__card card overflow-hidden shadow"> 
+                      <div class="news__card-image"><img src="images/home/news-01.jpg" alt="news">
+                        <div class="image__overlay"> <a class="btn btn-yellow" href="blog-details.html"> <i class="mdi mdi-link"> </i></a></div>
+                      </div>
+                      <div class="card-body">
+                        <h3>UX Designer Job During the COVID-19</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+                        <div class="news__poster">
+                          <div class="news__poster-image"><img src="images/layouts/user-01.jpg" alt="poster"></div>
+                          <div class="news__poster-info">
+                            <h4>Junaid Hasan</h4>
+                            <p>CEO, Themeland</p>
+                            <div class="info__share"><a href="#"><i class="mdi mdi-thumb-up"></i> 18</a><a href="#"><i class="mdi mdi-comment-text-multiple"></i> 20</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto animate__animated animate__fadeInUp wow" data-wow-delay="1s" data-wow-duration="1s">
+                    <div class="news__card card overflow-hidden shadow"> 
+                      <div class="news__card-image"><img src="images/home/news-02.jpg" alt="news">
+                        <div class="image__overlay"> <a class="btn btn-yellow" href="blog-details.html"> <i class="mdi mdi-link"> </i></a></div>
+                      </div>
+                      <div class="card-body">
+                        <h3>UX Designer Job During the COVID-19</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+                        <div class="news__poster">
+                          <div class="news__poster-image"><img src="images/layouts/user-02.jpg" alt="poster"></div>
+                          <div class="news__poster-info">
+                            <h4>Junaid Hasan</h4>
+                            <p>CEO, Themeland</p>
+                            <div class="info__share"><a href="#"><i class="mdi mdi-thumb-up"></i> 18</a><a href="#"><i class="mdi mdi-comment-text-multiple"></i> 20</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mx-auto animate__animated animate__fadeInUp wow" data-wow-delay="1.2s" data-wow-duration="1s">
+                    <div class="news__card card overflow-hidden shadow"> 
+                      <div class="news__card-image"><img src="images/home/news-03.jpg" alt="news">
+                        <div class="image__overlay"> <a class="btn btn-yellow" href="blog-details.html"> <i class="mdi mdi-link"> </i></a></div>
+                      </div>
+                      <div class="card-body">
+                        <h3>UX Designer Job During the COVID-19</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr...</p>
+                        <div class="news__poster">
+                          <div class="news__poster-image"><img src="images/layouts/user-03.jpg" alt="poster"></div>
+                          <div class="news__poster-info">
+                            <h4>Junaid Hasan</h4>
+                            <p>CEO, Themeland</p>
+                            <div class="info__share"><a href="#"><i class="mdi mdi-thumb-up"></i> 18</a><a href="#"><i class="mdi mdi-comment-text-multiple"></i> 20</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End News-->
+      <!-- Start Download-->
+      <div class="download section section-wrapper" id="download"> 
+        <div class="download__background"></div>
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-lg-6 animate__animated animate__fadeInLeft wow" data-wow-delay="0.8s" data-wow-duration="1s">
+              <div class="art-background"></div>
+              <div class="thumb mx-auto"> <img class="img-fluid img-mw img-shadow shake-item" src="images/home/download-app.png" alt="download app"></div>
+            </div>
+            <div class="col-lg-6"> 
+                    <div class="title">
+                      <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Download</h3>
+                      <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Get </span>
+                        <div class="text-color">Aavi</div><span> Today from store.</span>
+                      </h2>
+                      <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. </p>
+                    </div>
+              <div class="download__rating animate__animated animate__fadeIn wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                <h2>4.9</h2><i class="fas fa-star download__rating-icon"></i>
+                <div class="download__rating-total"><i class="far fa-download"></i>10K Downloads</div>
+              </div>
+              <div class="download__button"> <a class="animate__animated animate__fadeInUp wow" href="#" data-wow-delay="1s" data-wow-duration="1s"><img class="img-fluid" src="images/home/app-store-light.svg" alt="app-store"></a><a class="animate__animated animate__fadeInUp wow" href="#" data-wow-delay="1.2s" data-wow-duration="1s"><img class="img-fluid" src="images/home/google-play-light.svg" alt="google-play"></a></div><span class="d-inline-block text-white font-italic mt-3 animate__animated animate__fadeIn wow" data-wow-delay="1.4s" data-wow-duration="1s">* Available on iPhone, iPad and all Android devices</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Download-->
+      <!-- Start Subscribe-->
+            <div class="subscribe section section-wrapper" id="subscribe">
+              <div class="container"> 
+                <div class="row"> 
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto text-center"> 
+                          <div class="title">
+                            <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Subscribe</h3>
+                            <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>How Companies are Bringing in a </span>
+                              <div class="text-color">More Dynamic</div><span></span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">When your mission is to be better, faster and smarter, you need the best people driving your vision forward. You need people who can create focused marketing strategies that align with business goals </p>
+                          </div>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-12 col-md-10 mx-auto"> 
+                    <form class="animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <div class="input-group subscribe__input">
+                        <input class="form-control" type="text" required placeholder="Enter your email">
+                        <div class="input-group-prepend"> 
+                          <button class="btn btn-blue btn-lg" type="submit"><span class="d-none d-lg-block">Subscribe</span><i class="fas fa-paper-plane d-lg-none"></i></button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- End Subscribe-->
+      <!-- Start FAQ-->
+            <div class="faq section section-wrapper" id="faq"> 
+              <div class="container"> 
+                <div class="row"> 
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto text-center"> 
+                          <div class="title">
+                            <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">FAQ's</h3>
+                            <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Answer to Our Customers </span>
+                              <div class="text-color">Important Questions</div><span></span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">When your mission is to be better, faster and smarter, you need the best people driving your vision forward. You need people who can create focused marketing strategies that align with business goals </p>
+                          </div>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-lg-7"> 
+                    <div class="faq__accordion animate__animated animate__fadeInLeft wow" id="accordion" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1"><span class="card-header-title">How do I log in?</span><span class="card-header-icon"></span></div>
+                        <div class="collapse show" id="faq1" data-parent="#accordion">
+                          <div class="card-body"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2"><span class="card-header-title">How do I change my username?</span><span class="card-header-icon"></span></div>
+                        <div class="collapse" id="faq2" data-parent="#accordion">
+                          <div class="card-body"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3"><span class="card-header-title">I've forgotten my password. How do I login?</span><span class="card-header-icon"></span></div>
+                        <div class="collapse" id="faq3" data-parent="#accordion">
+                          <div class="card-body"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4"><span class="card-header-title">Why can't I log in?</span><span class="card-header-icon"></span></div>
+                        <div class="collapse" id="faq4" data-parent="#accordion">
+                          <div class="card-body"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5"><span class="card-header-title">I've logged in but I still can't see content?</span><span class="card-header-icon"></span></div>
+                        <div class="collapse" id="faq5" data-parent="#accordion">
+                          <div class="card-body"> But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="faq__question animate__animated animate__fadeInRight wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                      <h3>Do You Have Any Question?</h3>
+                      <form action="">
+                        <div class="form-group">
+                          <div class="input-group"> 
+                            <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-account"></i></span></div>
+                            <input class="form-control" type="text" placeholder="Your Name*">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group"> 
+                            <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-email"></i></span></div>
+                            <input class="form-control" type="email" placeholder="Your Email*">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="input-group"> 
+                            <textarea class="form-control" placeholder="Write you question?" rows="3"></textarea>
+                          </div>
+                        </div>
+                        <button class="btn btn-blue btn-shadow btn-lg btn-block">Ask question</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- End FAQ-->
+      <!-- Start Contact-->
+            <div class="contact section section-wrapper" id="contact">
+              <div class="container"> 
+                <div class="row"> 
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto text-center"> 
+                          <div class="title">
+                            <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Contact</h3>
+                            <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Get In </span>
+                              <div class="text-color">Touch</div><span></span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. 🙂</p>
+                          </div>
+                  </div>
+                </div>
+                <form class="animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                  <div class="row"> 
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-account"></i></span></div>
+                          <input class="form-control" type="text" placeholder="Your Name*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-email"></i></span></div>
+                          <input class="form-control" type="email" placeholder="Your Email*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-phone"></i></span></div>
+                          <input class="form-control" type="number" placeholder="Your Phone">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-text-subject"></i></span></div>
+                          <input class="form-control" type="text" placeholder="Subject">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <textarea class="form-control" placeholder="Write you question?" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mx-auto">
+                      <button class="btn btn-blue btn-lg btn-shadow btn-block">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      <!-- End Contact-->
+      <!-- Start Footer-->
+      <div class="footer">
+        <div class="footerTop section-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="footerTop__item"> 
+                  <div class="footerTop__item-logo"> <img src="images/layouts/logo-white.svg" alt="logo"></div>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. 🙂</p>
+                  <div class="footerTop__item-social"> <a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-google-plus"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-behance"></i></a><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Usefull Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Terms </a></li>
+                    <li> <a href="#">Privacy</a></li>
+                    <li> <a href="#">Security</a></li>
+                    <li> <a href="#">Status</a></li>
+                    <li> <a href="#">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Other Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Pricing</a></li>
+                    <li> <a href="#">API</a></li>
+                    <li> <a href="#">Training</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">About</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Contact Us</h3>
+                  <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar</p>
+                  <ul class="footerTop__item-info"> 
+                    <li> <i class="mdi mdi-phone"></i>+02 - 123 456 78 9</li>
+                    <li> <i class="mdi mdi-email"> </i><a href="#">example@gmail.com</a></li>
+                    <li> <i class="mdi mdi-fax"> </i>+02 - 123 456 78 00 </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="container">
+            <div class="row"> 
+              <div class="col-lg-5 order-2 order-lg-1"> 
+                <div class="footerBottom__copyright"> 
+                  <p>
+                     © 2019 All right reserved by <a href="#">Aavi</a></p>
+                </div>
+              </div>
+              <div class="col-lg-7 order-1 order-lg-2 text-lg-right">
+                <ul class="footerBottom__menu"> 
+                  <li> <a class="scroll" href="#slider">Home </a></li>
+                  <li> <a class="scroll" href="#about">About </a></li>
+                  <li> <a class="scroll" href="#features">Features</a></li>
+                  <li> <a href="#">Pages </a></li>
+                  <li> <a class="scroll" href="#pricing">Pricing </a></li>
+                  <li> <a class="scroll" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer-->
+      <!-- Start Back-to-top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-angle-up"></i></a></div>
+      <!-- End Back-to-top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancy Box-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Wow JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <!-- Swiper JS-->
+    <script src="js/swiper.min.js"></script>
+    <!-- Venobox-->
+    <script src="js/venobox.min.js"></script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layouts/favicon.png" type="image/x-icon">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Fancy Box-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Link Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Material Design  Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <!-- Swiper JS-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Venobox-->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aavi</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Start Loader-->
+      <div class="loader"> 
+        <svg class="loader__effect" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+          <defs>
+            <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></fecolormatrix>
+            </filter>
+          </defs>
+          <g filter="url(#goo)">
+            <circle class="dot" cx="50" cy="25" r="25" fill="#0033CC"></circle>
+            <circle class="dot" cx="50" cy="25" r="25" fill="#673AB7"></circle>
+          </g>
+        </svg>
+      </div>
+      <!-- End Loader-->
+      <!-- Start Header-->
+      <div class="header">
+        <div class="header__overlay"></div>
+        <div class="container">
+          <div class="header__menu">
+            <div class="header__menu-logo"><a class="logo__link" href="index.html"><img class="logo__link-white" src="images/layouts/logo-white.svg" alt="logo"><img class="logo__link-blue" src="images/layouts/logo-blue.svg" alt="logo"></a></div>
+            <div class="header__menu-button">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <ul class="header__menu-list">
+              <li class="list__item">
+                <div class="list__item-title">Menu</div>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#slider">Home</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#about">About</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#features">Features</a></li>
+              <li class="list__item"><a class="list__item-link">Pages
+                  <div class="link__icon"><i class="fas fa-chevron-down"></i></div></a>
+                <ul class="submenu">
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Inner Pages<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="pricing.html">Pricing</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="newsletter.html">Newsletter</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="faq.html">FAQ's Page</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="contact.html">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Blogs<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog.html">Blog</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog-details.html">Blogs Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Accounts<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signin.html">Login</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signup.html">Sign Up</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="forgot.html">Forgot Password</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="coming-soon.html">Coming Soon</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="404.html">404</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="thank-you.html">Thank You</a></li>
+                </ul>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#pricing">Pricing</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#contact">Contact</a></li>
+              <li class="list__item"><a class="list__item-link" href="signin.html"><i class="mdi mdi-login"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Header-->
+      <!-- Start Banner-->
+            <div class="banner section" id="banner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto">
+                    <div class="banner__content animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                      <h1>Blog</h1>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                      <ol class="breadcrumb justify-content-center bg-transparent px-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Pages</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                      </ol>
+                      <form action="">
+                        <div class="input-group subscribe__input">
+                          <input class="form-control" type="text" required placeholder="Enter your email">
+                          <div class="input-group-prepend"> 
+                            <button class="btn btn-blue btn-lg" type="submit"><span class="d-none d-lg-block">Subscribe</span><i class="fas fa-paper-plane d-lg-none"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- End Banner-->
+      <!-- Start Blog-->
+      <div class="blog section section-wrapper" id="blog">
+        <div class="container"> 
+          <div class="row"> 
+            <div class="col-lg-9">
+              <div class="row"> 
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-01.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">The International Business Of Oregon</a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-02.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">Uniting Locally To Compete Globally</a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-03.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">The Five Basic Market Entry Models</a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-04.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">Expand Your Business Internationally</a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-05.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">Framework Of International Marketing </a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+                <div class="col-md-6"> 
+                        <div class="blog__item animate__animated animate__fadeIn wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                          <div class="card card__blog">
+                            <div class="blog__item-thumb"> <img class="img-fluid" src="images/blog/blog-06.jpg" alt="blog-item">
+                              <div class="thumb__overlay"><i class="fas fa-link"> </i></div>
+                            </div>
+                            <div class="card-body">
+                              <div class="blog__item-info"><a href="#">By Mr. Ariel Kuvalis Jr.</a><a class="info__time" href="#">Jul 31, 2020</a></div>
+                              <h4><a href="blog-details.html">The International Business Of Leo Laporte</a></h4>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal.</p><a class="blog__item-readmore" href="blog-details.html"> Read More</a>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+              </div>
+              <ul class="pagination">
+                <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"><span class="icon mdi mdi-arrow-left" aria-hidden="true"></span><span class="sr-only">Previous </span></a></li>
+                <li class="page-item"> <a class="page-link" href="#">1 </a></li>
+                <li class="page-item"> <a class="page-link" href="#">2</a></li>
+                <li class="page-item active"> <a class="page-link" href="#">3 </a></li>
+                <li class="page-item"> <a class="page-link" href="#">4 </a></li>
+                <li class="page-item"> <a class="page-link" href="#">5 </a></li>
+                <li class="page-item"> <a class="page-link" href="#" aria-label="Next"><span class="icon mdi mdi-arrow-right" aria-hidden="true"></span><span class="sr-only">Next </span></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3"> 
+                    <div class="sidebar animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">
+                      <div class="card card__search"> 
+                        <form action=""> 
+                          <div class="input-group"> 
+                            <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-magnify"> </i></span></div>
+                            <input class="form-control" type="search" name="s" placeholder="Enter your keyword">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="card card__widget">
+                        <div class="card-header" data-toggle="collapse" data-target="#recentPost" aria-expanded="true">
+                          <h4>Recent posts</h4>
+                        </div>
+                        <div class="card-body sidebar__post collapse show" id="recentPost"> <a class="sidebar__post-item" href="blog-details.html"> 
+                            <div class="item__thumb"> <img class="img-fluid" src="images/blog/blog-07.jpg" alt="blog"></div>
+                            <div class="item__content"> 
+                              <p>20 july, 5 min</p>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                            </div></a><a class="sidebar__post-item" href="blog-details.html"> 
+                            <div class="item__thumb"> <img class="img-fluid" src="images/blog/blog-08.jpg" alt="blog"></div>
+                            <div class="item__content"> 
+                              <p>20 july, 5 min</p>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                            </div></a><a class="sidebar__post-item" href="blog-details.html"> 
+                            <div class="item__thumb"> <img class="img-fluid" src="images/blog/blog-09.jpg" alt="blog"></div>
+                            <div class="item__content"> 
+                              <p>20 july, 5 min</p>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                            </div></a><a class="sidebar__post-item" href="blog-details.html"> 
+                            <div class="item__thumb"> <img class="img-fluid" src="images/blog/blog-10.jpg" alt="blog"></div>
+                            <div class="item__content"> 
+                              <p>20 july, 5 min</p>
+                              <h6>Lorem ipsum dolor sit amet.</h6>
+                            </div></a></div>
+                      </div>
+                      <div class="card card__widget">
+                        <div class="card-header" data-toggle="collapse" data-target="#categories" aria-expanded="true">
+                          <h4>Categories</h4>
+                        </div>
+                        <div class="card-body collapse show" id="categories">
+                          <ul class="sidebar__categories"> 
+                            <li> <a href="#"><span>Wordpress</span><span>[22]</span></a></li>
+                            <li class="active"><a href="#"><span>Branding</span><span>[15]</span></a></li>
+                            <li><a href="#"><span>UI Design</span><span>[32]</span></a></li>
+                            <li><a href="#"><span>Bootstrap</span><span>[24]</span></a></li>
+                            <li><a href="#"><span>Web Template</span><span>[43]</span></a></li>
+                            <li><a href="#"><span>Development</span><span>[41]</span></a></li>
+                            <li><a href="#"><span>Web Design</span><span>[9]</span></a></li>
+                            <li><a href="#"><span>Programming</span><span>[27]</span></a></li>
+                            <li><a href="#"><span>App Landing</span><span>[19]</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="card card__widget">
+                        <div class="card-header" data-toggle="collapse" data-target="#popular" aria-expanded="true">
+                          <h4>Popular Tags</h4>
+                        </div>
+                        <div class="card-body collapse show" id="popular">
+                          <div class="sidebar__tags"> <a href="#">UI/UX </a><a href="#">Free</a><a href="#">Branding</a><a href="#">Business</a><a href="#">Design</a><a href="#">CSS</a><a href="#">Development</a><a href="#">Programming</a><a href="#">JavaScritp</a><a href="#">Photoshop</a><a href="#">Aavi</a><a href="#">Bootstrap</a><a href="#">IOS</a><a href="#">Android</a><a href="#">Mobile App</a><a href="#">Landing Page</a><a href="#">Wordpress</a><a href="#">Web Design</a></div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Blog-->
+      <!-- Start Contact-->
+            <div class="contact section section-wrapper bg-light" id="contact">
+              <div class="container"> 
+                <div class="row"> 
+                  <div class="col-12 col-md-10 col-lg-8 mx-auto text-center"> 
+                          <div class="title">
+                            <h3 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="1s">Contact</h3>
+                            <h2 class="animate__animated animate__fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="1s"><span>Get In </span>
+                              <div class="text-color">Touch</div><span></span>
+                            </h2>
+                            <p class="animate__animated animate__fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="1s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. 🙂</p>
+                          </div>
+                  </div>
+                </div>
+                <form class="animate__animated animate__fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="1s">
+                  <div class="row"> 
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-account"></i></span></div>
+                          <input class="form-control" type="text" placeholder="Your Name*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-email"></i></span></div>
+                          <input class="form-control" type="email" placeholder="Your Email*">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-phone"></i></span></div>
+                          <input class="form-control" type="number" placeholder="Your Phone">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6"> 
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-text-subject"></i></span></div>
+                          <input class="form-control" type="text" placeholder="Subject">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-group">
+                        <div class="input-group"> 
+                          <textarea class="form-control" placeholder="Write you question?" rows="3"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 mx-auto">
+                      <button class="btn btn-blue btn-lg btn-shadow btn-block">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+      <!-- End Contact-->
+      <!-- Start Footer-->
+      <div class="footer">
+        <div class="footerTop section-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="footerTop__item"> 
+                  <div class="footerTop__item-logo"> <img src="images/layouts/logo-white.svg" alt="logo"></div>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. 🙂</p>
+                  <div class="footerTop__item-social"> <a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-google-plus"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-behance"></i></a><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Usefull Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Terms </a></li>
+                    <li> <a href="#">Privacy</a></li>
+                    <li> <a href="#">Security</a></li>
+                    <li> <a href="#">Status</a></li>
+                    <li> <a href="#">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Other Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Pricing</a></li>
+                    <li> <a href="#">API</a></li>
+                    <li> <a href="#">Training</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">About</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Contact Us</h3>
+                  <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar</p>
+                  <ul class="footerTop__item-info"> 
+                    <li> <i class="mdi mdi-phone"></i>+02 - 123 456 78 9</li>
+                    <li> <i class="mdi mdi-email"> </i><a href="#">example@gmail.com</a></li>
+                    <li> <i class="mdi mdi-fax"> </i>+02 - 123 456 78 00 </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="container">
+            <div class="row"> 
+              <div class="col-lg-5 order-2 order-lg-1"> 
+                <div class="footerBottom__copyright"> 
+                  <p>
+                     © 2019 All right reserved by <a href="#">Aavi</a></p>
+                </div>
+              </div>
+              <div class="col-lg-7 order-1 order-lg-2 text-lg-right">
+                <ul class="footerBottom__menu"> 
+                  <li> <a class="scroll" href="#slider">Home </a></li>
+                  <li> <a class="scroll" href="#about">About </a></li>
+                  <li> <a class="scroll" href="#features">Features</a></li>
+                  <li> <a href="#">Pages </a></li>
+                  <li> <a class="scroll" href="#pricing">Pricing </a></li>
+                  <li> <a class="scroll" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer-->
+      <!-- Start Back-to-top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-angle-up"></i></a></div>
+      <!-- End Back-to-top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancy Box-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Wow JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <!-- Swiper JS-->
+    <script src="js/swiper.min.js"></script>
+    <!-- Venobox-->
+    <script src="js/venobox.min.js"></script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/layouts/favicon.png" type="image/x-icon">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <!-- Fancy Box-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <!-- Link Owl Carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Material Design  Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <!-- Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Google Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap">
+    <!-- Swiper JS-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Venobox-->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aavi</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Start Loader-->
+      <div class="loader"> 
+        <svg class="loader__effect" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+          <defs>
+            <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+              <fegaussianblur in="SourceGraphic" stddeviation="10" result="blur"></fegaussianblur>
+              <fecolormatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo"></fecolormatrix>
+            </filter>
+          </defs>
+          <g filter="url(#goo)">
+            <circle class="dot" cx="50" cy="25" r="25" fill="#0033CC"></circle>
+            <circle class="dot" cx="50" cy="25" r="25" fill="#673AB7"></circle>
+          </g>
+        </svg>
+      </div>
+      <!-- End Loader-->
+      <!-- Start Header-->
+      <div class="header">
+        <div class="header__overlay"></div>
+        <div class="container">
+          <div class="header__menu">
+            <div class="header__menu-logo"><a class="logo__link" href="index.html"><img class="logo__link-white" src="images/layouts/logo-white.svg" alt="logo"><img class="logo__link-blue" src="images/layouts/logo-blue.svg" alt="logo"></a></div>
+            <div class="header__menu-button">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <ul class="header__menu-list">
+              <li class="list__item">
+                <div class="list__item-title">Menu</div>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#slider">Home</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#about">About</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#features">Features</a></li>
+              <li class="list__item"><a class="list__item-link">Pages
+                  <div class="link__icon"><i class="fas fa-chevron-down"></i></div></a>
+                <ul class="submenu">
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Inner Pages<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="pricing.html">Pricing</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="newsletter.html">Newsletter</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="faq.html">FAQ's Page</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="contact.html">Contact</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Blogs<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog.html">Blog</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="blog-details.html">Blogs Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link has-child">Accounts<i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signin.html">Login</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="signup.html">Sign Up</a></li>
+                      <li class="submenu__drop"><a class="submenu__drop-link" href="forgot.html">Forgot Password</a></li>
+                    </ul>
+                  </li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="coming-soon.html">Coming Soon</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="404.html">404</a></li>
+                  <li class="submenu__drop"><a class="submenu__drop-link" href="thank-you.html">Thank You</a></li>
+                </ul>
+              </li>
+              <li class="list__item"><a class="list__item-link scroll" href="#pricing">Pricing</a></li>
+              <li class="list__item"><a class="list__item-link scroll" href="#contact">Contact</a></li>
+              <li class="list__item"><a class="list__item-link" href="signin.html"><i class="mdi mdi-login"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Header-->
+      <!-- Start Forgot-->
+      <div class="forgot">
+        <div class="container"> 
+          <div class="row align-items-center"> 
+            <div class="col-12 col-lg-8 mx-auto text-center"> 
+              <div class="forgot__content mb-5">
+                <h1 class="text-white">Forgot your password!</h1>
+                <p class="text-white my-4">We are here to help you to recover your password. Enter the email address you used when you joined and we’ll send you instruction to reset your password.</p>
+              </div>
+              <form action="">
+                <div class="row mt-3 mt-lg-4"> 
+                  <div class="col-12 form-group"> 
+                    <div class="input-group"> 
+                      <div class="input-group-prepend"> <span class="input-group-text"> <i class="mdi mdi-email"> </i></span></div>
+                      <input class="form-control" type="email" placeholder="Enter Your Email*">
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3 mb-lg-4">
+                    <button class="btn btn-lg btn-block btn-facebook px-lg-5 mt-3">Reset Password </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Forgot-->
+      <!-- Start Footer-->
+      <div class="footer">
+        <div class="footerTop section-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <div class="footerTop__item"> 
+                  <div class="footerTop__item-logo"> <img src="images/layouts/logo-white.svg" alt="logo"></div>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. 🙂</p>
+                  <div class="footerTop__item-social"> <a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-google-plus"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-behance"></i></a><a href="#"><i class="fab fa-dribbble"></i></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Usefull Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Terms </a></li>
+                    <li> <a href="#">Privacy</a></li>
+                    <li> <a href="#">Security</a></li>
+                    <li> <a href="#">Status</a></li>
+                    <li> <a href="#">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Other Links</h3>
+                  <ul class="footerTop__item-list"> 
+                    <li> <a href="#">Pricing</a></li>
+                    <li> <a href="#">API</a></li>
+                    <li> <a href="#">Training</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">About</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-lg"> 
+                <div class="footerTop__item"> 
+                  <h3 class="footerTop__item-title">Contact Us</h3>
+                  <p>Akshya Nagar 1st Block 1st Cross, Rammurthy nagar</p>
+                  <ul class="footerTop__item-info"> 
+                    <li> <i class="mdi mdi-phone"></i>+02 - 123 456 78 9</li>
+                    <li> <i class="mdi mdi-email"> </i><a href="#">example@gmail.com</a></li>
+                    <li> <i class="mdi mdi-fax"> </i>+02 - 123 456 78 00 </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <div class="container">
+            <div class="row"> 
+              <div class="col-lg-5 order-2 order-lg-1"> 
+                <div class="footerBottom__copyright"> 
+                  <p>
+                     © 2019 All right reserved by <a href="#">Aavi</a></p>
+                </div>
+              </div>
+              <div class="col-lg-7 order-1 order-lg-2 text-lg-right">
+                <ul class="footerBottom__menu"> 
+                  <li> <a class="scroll" href="#slider">Home </a></li>
+                  <li> <a class="scroll" href="#about">About </a></li>
+                  <li> <a class="scroll" href="#features">Features</a></li>
+                  <li> <a href="#">Pages </a></li>
+                  <li> <a class="scroll" href="#pricing">Pricing </a></li>
+                  <li> <a class="scroll" href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer-->
+      <!-- Start Back-to-top-->
+      <div class="back-to-top" id="back-to-top"><a href="#"><i class="far fa-angle-up"></i></a></div>
+      <!-- End Back-to-top-->
+    </div>
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+    <!-- Owl Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Fancy Box-->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Wow JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <!-- Swiper JS-->
+    <script src="js/swiper.min.js"></script>
+    <!-- Venobox-->
+    <script src="js/venobox.min.js"></script>
+    <!-- Main JS-->
+    <script src="js/main.js"></script>
+  </body>
+</html>
